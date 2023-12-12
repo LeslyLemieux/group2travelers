@@ -1,0 +1,348 @@
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@500&family=Open+Sans:wdth,wght@75,498&display=swap');
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /*test*/
+    .hidden {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+        transition: all 1s;
+    }
+    
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+    
+    
+    @media(prefers-reduced-motion) {
+        .hidden {
+            transition: none;
+        }
+    }
+
+
+    body {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+        overflow-x: hidden;
+        width: fixed;
+        height: 100vh;
+        background-color: #FFF240;
+    }
+    
+    
+    .intro {
+        height: 100vh;
+        background-color: #FFF240;
+        padding: 0;
+    }
+
+    nav {
+        width: 100%;
+        overflow: auto;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0 100px 0 150px;
+        list-style: none;
+        margin-top: 50px;
+        z-index: 100;
+    }
+
+    .ribbon img {
+        position: absolute;
+        top: 1%;
+        left: 60px;
+        height: 650px;
+        z-index: 1;
+    }
+
+    .logo img{
+        position:absolute;
+        margin-top:20px;
+    }
+
+    li {
+        float: right;
+        position: relative;
+        z-index: 100;
+    }
+
+    nav a{
+        width: 100px;
+        display:block;
+        padding: 20px 15px;
+        text-decoration: none;
+        font-family: 'calibri';
+        color: #F94A35;
+        text-align: right;
+        font-size: 20px;
+        z-index: 100;
+    }
+
+    .intro h1 {
+        text-align: center;
+        font-size: 50px;
+        position: absolute;
+        padding-left: 320px;
+        top: 260px;
+        font-family: "Cinzel Decorative";
+        z-index: 2;
+
+    }
+
+    .intro h2 {
+        text-align:center;
+        padding: 100px 0 0 0;
+        font-size: 25px;
+        font-family:"calibri";
+    }
+
+    .text {
+        padding-top: 400px;
+    }
+
+    #about {
+        background-color: #F94A35;
+        height: 105vh;
+        padding: 1px;
+        overflow: auto;
+        scroll-snap-align: start;
+    }
+
+    .banderitas2 {
+        left: 100px;
+    }
+
+    /*about us part*/
+    .hilary {
+        position: absolute;
+        left: 300px;
+        z-index: 3;
+    }
+    .whayne {
+        position: absolute;
+        left: 264px;
+        z-index: 3;
+    }
+    .gwy {
+        position: absolute;
+        right: 300px;
+        z-index: 3;
+    }
+    .vincent {
+        position: absolute;
+        left: 300px;
+        z-index: 3;
+    }
+    .kaylee {
+        position: absolute;
+        left: 264px;
+        z-index: 3;
+    }
+    .jao { 
+        position: absolute;
+        right: 300px;
+        z-index: 3;
+    }
+    .chezka {
+        position: absolute;
+        left: 260px;
+        z-index: 3;
+    }
+    .araw {
+        position: absolute;
+        z-index: 1;
+        left: -50px;
+        top: 760px;
+    }
+    .name {
+        font-family: 'calibri';
+        color: #E5AF37;
+        position: absolute;
+        top: 1320px;
+        left: 600px;
+        z-index: 2;
+    }
+    .bundok {
+        position: absolute;
+        z-index: 1;
+        right: -60px;
+        top: 1055px;
+    }
+
+    /*channel part*/
+    .box1{
+        background-color: #FF7507;
+        height: 300px;
+        width: 500px;
+        z-index: 3;
+        position: absolute;
+        top: 1600px;
+        left: 300px;
+    }
+    .box1 p {
+        color: white;
+        font-family: 'calibri';
+        font-size: 22px;
+        padding: 100px 70px 0 70px;
+    }
+    .box1 h2{
+        color: white;
+        font-family: 'Calibri';
+        padding: 30px 70px 0 70px;
+        position:absolute;
+    }
+    .channel {
+        height: 100vh;
+        background-color: #FFB30A;
+        padding: 1px;
+        overflow: auto;
+    }
+    .channel2 {
+        height: 100vh;
+        background-color: #FFB30A;
+        padding: 1px;
+        overflow: auto;
+    }
+
+    .box2 p {
+        color: white;
+        font-family: 'calibri';
+        font-size: 22px;
+        padding: 100px 70px 0 70px;
+    }
+    .box2 h2{
+        color: white;
+        font-family: 'Calibri';
+        padding: 30px 70px 0 70px;
+        position:absolute;
+    }
+    .box2{
+        background-color: #FF7507;
+        height: 300px;
+        width: 700px;
+        z-index: 3;
+        position: absolute;
+        top: 2250px;
+        left: 300px;
+    }
+
+    .border1 {
+        position: absolute;
+        top: 1600px;
+        left: 100px;
+        z-index: 3;
+    }
+
+    .border2 {
+        position: absolute;
+        top: 2140px;
+        right: 100px;
+        z-index: 3;
+    }
+
+    .flower2 {
+        position: absolute;
+        top: 2190px;
+        left: 150px;
+        z-index: 4;
+    }
+
+    .parallax {
+        background: url("https://media.discordapp.net/attachments/1183568016886218842/1183940057242021929/this_slide_is_for_memeing_around_4.png?ex=658a291a&is=6577b41a&hm=d6f8a572e182e03e4c21727fb165e43c3999d2f8d560fee2abe53305efc61243&=&format=webp&quality=lossless&width=1920&height=1080") no-repeat fixed 100%;
+        height: 50vh;
+        padding: 1px;
+        }
+
+
+        .chanel {
+            height: 100vh;
+        }
+
+.poster {
+    height: 100vh;
+    padding: 1px;
+}
+
+.poster h1 {
+    font-family:'Cinzel Decorative';
+    font-size: 30px;
+    position: absolute;
+    padding-left: 200px;
+    padding-top: 20px;
+    color: #F94A35;
+}
+
+.poster1 img {
+    position: absolute;
+    top: 3160px;
+    padding: 0 0 0 200px;
+}
+
+.poster2 img {
+    position: absolute;
+    top: 3160px;
+    padding: 0 0 0 560px;
+}
+.postertext {
+    color: #F94A35;
+    font-family: calibri;
+    position: absolute;
+    padding-left: 200px;
+    padding-top: 110px;
+}
+    
+.whaynesucks {
+    position: absolute;
+    top: 3150px;
+}
+.youtube {
+    position: absolute;
+    z-index: 4;
+    padding: 100px;
+    left: 150px;
+}
+.footer {
+    height: 56vh;
+    background-color: #F94A35;
+}
+
+.dyaryo {
+    position: absolute;
+    top: 3510px;
+    right: 700px;
+}
+
+.footer h2 {
+    position: absolute;
+    font-family: 'Calibri';
+    color: white;
+    padding-top: 50px;
+    left: 560px;
+}
+.footer p {
+    position: absolute;
+    font-family: calibri;
+    color: white;
+    padding-top: 100px;
+    left: 560px;
+}
+.youtube img {
+    position: absolute;  
+    bottom: -130px;
+    right: -450px;
+    z-index: 4;
+}
+.insta img{
+    position: absolute;
+    top: 3580px;
+    left: 150px;
+    z-index: 4;
+}
